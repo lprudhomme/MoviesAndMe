@@ -8,9 +8,9 @@ class FilmList extends React.Component {
     super(props)
   }
 
-  _displayDetailForFilm = (idFilm, favoriteList) => {
+  _displayDetailForFilm = (idFilm) => {
     //console.log("Display film with id " + idFilm)
-    this.props.navigation.navigate("FilmDetail", { idFilm: idFilm, favoriteList: favoriteList })
+    this.props.navigation.navigate("FilmDetail", { idFilm: idFilm })
   }
 
   render() {  //obligatoire pour renvoyer le component custom de la classe
