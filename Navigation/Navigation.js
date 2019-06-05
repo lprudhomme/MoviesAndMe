@@ -112,7 +112,7 @@ const MoviesTabNavigator = createBottomTabNavigator(
         }
 
         // You can return any component that you like here!
-        return <IconComponent name={iconName} size={30} color={tintColor} />;
+        return <IconComponent name={iconName} size={30} />;
       },
     }),
     tabBarOptions: {
