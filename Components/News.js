@@ -51,7 +51,7 @@ class News extends React.Component {
   }
 
   render() {  //obligatoire pour renvoyer le component custom de la classe
-    console.log(this.props)
+    //console.log(this.props)
     return (
       <View style={ styles.main_container }>
         <FilmList

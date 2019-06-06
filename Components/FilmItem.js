@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexWrap: 'wrap',
     paddingRight: 5,
-    color: 'blue'
+    //color: 'blue'
     },
   vote_text: {
     fontWeight: 'bold',

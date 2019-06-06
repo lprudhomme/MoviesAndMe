@@ -5,6 +5,8 @@ import Search from '../Components/Search'
 import FilmDetail from '../Components/FilmDetail'
 import Favorites from '../Components/Favorites'
 import News from '../Components/News'
+import GoogleMap from '../Components/GoogleMap'
+
 import SearchIconWithBadge from '../Components/SearchIconWithBadge'
 import FavoriteIconWithBadge from '../Components/FavoriteIconWithBadge'
 import NewsIconWithBadge from '../Components/NewsIconWithBadge'
@@ -91,6 +93,9 @@ const MoviesTabNavigator = createBottomTabNavigator(
       //      style={styles.icon}/>
       //  }
       //}
+    },
+    GoogleMap: {
+      screen: GoogleMap,
     }
   },
   {
@@ -110,9 +115,12 @@ const MoviesTabNavigator = createBottomTabNavigator(
           iconName = require('../Images/ic_fiber_new.png');
           IconComponent = NewsIconWithBadge;
         }
+        else if (routeName === 'GoogleMap') {
+          return <Image source={require('../Images/ic_map.png')} style={styles.icon}/>;
+        }
 
         // You can return any component that you like here!
-        return <IconComponent name={iconName} size={30} />;
+        return <IconComponent name={iconName} size={30} />; //color={tintColor}/>;
       },
     }),
     tabBarOptions: {
