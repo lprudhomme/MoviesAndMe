@@ -1,4 +1,4 @@
-const API_TOKEN = "7fda1ff42eab59d4d4477ea8e4dd5ce5"
+const API_TOKEN = ""
 
 export function getFilmsFromApiWithSearchedText (text, page) {
   // construit l'URL d'appel search de l'API avec : le token, la langue fr, le texte recherché et le n° de la page
